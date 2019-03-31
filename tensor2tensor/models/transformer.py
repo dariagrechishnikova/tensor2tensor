@@ -1144,7 +1144,7 @@ def fast_decode(encoder_output,
         alpha,
         states=cache,
         eos_id=eos_id,
-        stop_early=(top_beams == 1))
+        stop_early=True) #(top_beams == 1))
 
     if top_beams == 1:
       decoded_ids = decoded_ids[:, 0, 1:]
