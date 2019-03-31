@@ -53,6 +53,7 @@ transformer_prepare_encoder = transformer_layers.transformer_prepare_encoder
 transformer_encoder = transformer_layers.transformer_encoder
 transformer_ffn_layer = transformer_layers.transformer_ffn_layer
 
+print('Using updated version of the t2t decoding')
 
 def transformer_encode(encoder_function, inputs, target_space, hparams,
                        attention_weights=None, features=None, losses=None,
